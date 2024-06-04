@@ -1,0 +1,79 @@
+# Global Property
+title-text: ""
+title-font: "DejaVu Sans Regular 48"
+title-color: "#000000"
+
+message-font: "Terminus 16"
+message-color: "#000000"
+message-bg-color: "#F00000"
+
+desktop-image: "genshin.png"
+desktop-image-scale-method: "fitwidth"
+desktop-color: "#000000"
+
+terminal-box: "assets/terminal_box_*.png"
+terminal-border: "0"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+
+# Components
+
+# Boot menu
++ boot_menu {
+	item_font = "Terminus 16"
+	selected_item_font = ""
+	item_color = "#000000"
+	selected_item_color= "#000000"
+	icon_width = 32
+	icon_height = 32
+	item_height = 32
+	item_padding = 5
+	item_icon_space = 16
+	item_spacing = 8
+	menu_pixmap_style = "assets/menu_*.png"
+
+	selected_item_pixmap_style = "assets/select_*.png"
+	scrollbar = true
+	scrollbar_thumb = "assets/slider_*.png"
+	left = 33%
+	width = 34%
+	top = 50%
+	height = 25%
+}
+
+# Progress bar
++ progress_bar {
+    id = "__timeout__"
+    left = 50%-125
+    top = 100%-175
+    width = 250
+    height = 50
+    show_text = true
+    font = "Terminus 16"
+    text_color = "#000000"
+    align = "center"
+	text = "Booting in %d seconds"
+    bar_style = "assets/progress_bar_*.png"
+}
+
+# Text
++ label { 
+	align = "center" 
+	text = "抵制不良游戏 拒绝盗版游戏。注意自我保护 谨防受骗上当。适度游戏益脑 沉迷游戏伤身。合理安排时间 享受健康生活。" 
+	font = "SDK_JP_Web"
+	top = 86% 
+	left = 20% 
+	width = 60%
+	height = 25
+}
+
+# Tips
++ image {
+  top = 100%-100
+  left = 50%-360
+  width = 720
+  height = 60
+  file = "info.png"
+}
